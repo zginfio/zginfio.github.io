@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti&family=Frijole&family=Josefin+Sans&display=swap');
+
+:root{
+  --linear: linear-gradient(34deg, #e62bff, #38f0fd);
+
+}
+body{
+  display: flex;
+  justify-content: center;
+  font-family: "Athiti", arial;
+  font-size: 18px;
+  background: var(--linear);
+  height: 100vh;
+  
+}
+
+*{
+  box-sizing: border-box;
+
+}
+
+.flexer{
+  display: flex;
+  overflow: scroll;
+  width: 800px;
+}
+
+.stage-1{
+  background: red
+}
+
+
+.stage-2{
+width: 500px;
+height: 100px;
+background: white;
+;
+}
+
+.warn{
+  color: white;
+}
+
+.summary{
+  color: rgb(0, 0, 0);
+  background: white;
+  padding: 7px;
+  border-radius: 6px;
+}
+.container{
+  height: 550px;
+  width: 370px;
+  background: rgba(0, 0, 0, 0.26);
+  border-radius: 7px;
+  padding: 15px;
+  position: relative;
+  overflow: HIDDEN;
+}
+
+
+.main-login, .go-out{
+  position: relative;
+}
+
+.go-out{
+  animation: out 0.5s 1 forwards;
+}
+
+@keyframes out{
+  100%{
+    transform: translateX(-100%)
+  }
+}
+
+.now{
+  margin-left: 25px;
+  animation: coming-in 0.4s 1 forwards;
+}
+
+
+.label{
+  color: white;
+  margin: 2px;
+  
+}
+
+.title{
+  font-weight: bold;
+  color: white;
+  font-family: "josefin sans";
+}
+input{
+padding: 10px;
+border-radius: 6px;
+border: 2px solid #eee;
+font-size: 16px;
+outline-color: #fff;
+width: 275px;
+background: white;
+color: black;
+
+
+}
+
+::placeholder{
+  color: rgba(139, 139, 139, 0.699);
+}
+
+
+
+.generate-btn{
+  font-size: 25px;
+  width: 275px;
+  color: white;
+  padding: 10px;
+    bottom: 0;
+  background: var(--linear);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  outline: none;
+  
+
+}
+
+
+.next-btn, .generate-btn{
+  padding: 6px;
+  color: white;
+  background: linear-gradient(transparent, rgb(186, 0, 243));
+  border: none;
+  font-size: 30px;
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  left: 0;
+  height: 150px;
+  font-family:'Courier New', Courier, monospace;
+  bottom: 0;
+
+  
+
+}
+
+
+.generate-btn{
+  opacity: 0;
+  z-index: -1;
+}
